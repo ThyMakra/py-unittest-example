@@ -31,8 +31,6 @@ class TestMockCallback(TestCase):
             ValueError,
             'replace some func return value',
         ]
-
-        # mock_side_effect.some_func.side_effect = make_new_side_effect_function
         
         # 1st side effect
         effect_1 = get_the_mock_side_effect(mock_side_effect)
