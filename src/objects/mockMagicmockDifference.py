@@ -1,7 +1,11 @@
 class AssistObject:
     @property
-    def attribute():
+    def attribute(self):
         return "not important"
+
+    @property
+    def other_attribute(self):
+        return "won't be accessed by the MockMagicmockDifference Object"
 
 
 class MockMagicmockDifference:

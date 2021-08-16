@@ -26,4 +26,15 @@ def test_mock_magicmock_difference():
 
     # pass
     assert difference.get_assist_attribute() == assist.attribute
+    """ 
+    The test passes because the first time our mock assist’s assist.attribute is accessed 
+    (by the MockMagicmockDifference.get_assist_attribute() code when the test calls it) 
+    it returns the same other mock object as the second time it’s accessed 
+    (by the assert statement in the test itself). 
     
+    The assert statement relies on this property of mocks to pass. 
+    If MockMagicmockDifference had used some other attribute of the mock annotation, 
+    say assist.other_attribute instead of assist.attribute,
+    that would have returned a different other mock object and the assert would have failed.
+    """
+    # assert difference.get_assist_attribute() == assist.other_attribute
