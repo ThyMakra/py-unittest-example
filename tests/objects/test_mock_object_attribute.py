@@ -1,5 +1,4 @@
 from unittest import TestCase, mock
-import unittest
 
 from src.objects.mock_object_attribute import MockObjectAttribute, set_attribute_of_mock
 
