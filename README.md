@@ -1,6 +1,14 @@
 # Python Unit Testing
 
-Some examples of Python Unit testing
+Some examples of Python Unit testing.
+
+- Using Makefile
+
+    ```bash
+    make test
+    ```
+
+    > Running the tests is not the goal of this project, but the information and the examples of different topics regarding `Unit Testing`
 
 ## Topics
 
