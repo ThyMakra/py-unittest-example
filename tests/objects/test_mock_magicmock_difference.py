@@ -1,6 +1,6 @@
 from unittest import mock
 
-from src.objects.mockMagicmockDifference import MockMagicmockDifference
+from src.objects.mock_magicmock_difference import MockMagicmockDifference
 
 
 def test_mock_magicmock_difference():

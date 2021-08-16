@@ -1,4 +1,4 @@
-class AssistObject:
+class AssistObjectA:
     @property
     def attribute(self):
         return "not important"
