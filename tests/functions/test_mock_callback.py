@@ -42,6 +42,9 @@ class TestMockCallback(TestCase):
         self.assertEqual(effect_2, 'replace some func return value')
 
         # replace side effect with a whole new function
+        """ the function that is replacing the mock method need to be called if
+            we were to use it inside the array/tuple of side_effect
+        """
         mock_side_effect.some_func.side_effect = make_new_side_effect_function
         new_effect = get_the_mock_side_effect(mock_side_effect)
         self.assertEqual(new_effect, 'output of the replaced function')
