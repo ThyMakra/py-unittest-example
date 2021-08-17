@@ -17,7 +17,9 @@ Some examples of Python Unit testing.
     1. [Difference of Mock() and MagicMock(). Difference in error raised](tests/objects/test_mock_magicmock_difference.py#L14)
     2. [Mocking an object attribute](tests/objects/test_mock_object_attribute.py#L11) or [Set a value to a mock's attribute](tests/objects/test_mock_object_attribute.py#L19)
     3. [Return value and Side effect](tests/functions/test_mock_callback.py#L10)
-3. Patch (TODO)
+3. Patch 
+    1. [Patching imported libray](tests/patching/test_patching_datetime.py#L14)
+    2. [Patching the attribute of a library](tests/patching/test_patching_request.py#L41)
 4. Sentinel (TODO)
 ## Reference
 
