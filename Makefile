@@ -10,6 +10,10 @@ install:
 test:
 	PYTHONPATH=./src pytest
 
+# lint:
+# 	docker run --rm -v $(shell pwd):/app --user $(shell id -u):$(shell id -g) -e DEFAULT_WORKSPACE=/app $(additional_envs) nvuillam/mega-linter:v4.43.0
+# # 	docker run --rm -v /Users/meak/Desktop/Personal/1_Code/03-py_unit_test:/app --user 501:20 -e DEFAULT_WORKSPACE=/app  nvuillam/mega-linter:v4.43.0
+
 # Defines the default target that `make` will to try to make, 
 # or in the case of a phony target, execute the specified commands
 # This target is executed whenever we just type `make`
